@@ -1,0 +1,73 @@
+@use '../abstracts' as a;
+
+.blog-card {
+  background-color: a.$white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  padding: a.px-to-rem(24px);
+  margin: a.px-to-rem(24px);
+  border-radius: a.px-to-rem(20px);
+  border: 1px solid a.$gray-950;
+  box-shadow: a.px-to-rem(8px) a.px-to-rem(8px) 0 #000;
+  gap: a.px-to-rem(24px);
+  max-width: a.px-to-rem(384px);
+
+  // Main image
+
+  &__img {
+    height: a.px-to-rem(200px);
+    border-radius: a.px-to-rem(10px);
+    width: 100%;
+    object-fit: cover;
+  }
+
+  // Info section
+  &__info {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: a.px-to-rem(12px);
+  }
+
+  &__badge {
+    background-color: a.$yellow;
+    padding: a.px-to-rem(4px) a.px-to-rem(12px);
+    border-radius: a.px-to-rem(4px);
+    font-size: clamp(0.75rem, 0.706rem + 0.1878vw, 0.875rem);
+  }
+
+  &__timestamp {
+    font-size: clamp(0.75rem, 0.706rem + 0.1878vw, 0.875rem);
+  }
+
+  &__title {
+    font-size: clamp(1.25rem, 1.162rem + 0.3756vw, 1.5rem);
+  }
+
+  &__description {
+    color: a.$gray-500;
+    font-size: clamp(0.875rem, 0.831rem + 0.1878vw, 1rem);
+  }
+
+  // Author
+
+  &__author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: a.px-to-rem(12px);
+
+    &-img {
+      width: a.px-to-rem(32px);
+      height: a.px-to-rem(32px);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    &-name {
+      font-size: a.px-to-rem(14px);
+    }
+  }
+}
