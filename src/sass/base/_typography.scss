@@ -1,1 +1,47 @@
 // Typography
+
+/* Figtree Font Faces */
+@font-face {
+  font-family: 'Figtree';
+  src:
+    url('../../assets/Figtree-ExtraBold.woff2') format('woff2'),
+    url('../../assets/Figtree-ExtraBold.woff') format('woff');
+  font-weight: 800; // ExtraBold
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src:
+    url('../../assets/fonts/Figtree-Medium.woff2') format('woff2'),
+    url('../../assets/fonts/Figtree-Medium.woff2') format('woff');
+  font-weight: 500; // Medium
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Default font for body */
+body {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 500;
+}
+
+/* Headings with ExtraBold */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 800;
+}
+
+p.medium {
+  font-weight: 500;
+}
+
+p.bold {
+  font-weight: 800;
+}
